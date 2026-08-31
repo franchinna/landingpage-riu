@@ -12,7 +12,7 @@
     class="aspect-video w-full rounded-lg object-cover"
   />
 
-  <p class="mt-4 flex items-center gap-2 font-bold text-[#343a40]">
+  <p class="mt-4 flex items-center gap-2 font-bold text-ink">
     <app-calendar-icon />
     {{ destination().label }}
   </p>
@@ -23,5 +23,5 @@
 
   <!-- 6lh son seis alturas de línea: el bloque ocupa siempre lo mismo aunque el texto no
        llegue, así las cards de la fila terminan a la misma altura. -->
-  <p class="mt-4 line-clamp-6 min-h-[6lh] text-[#343a40]">{{ destination().description }}</p>
+  <p class="mt-4 line-clamp-6 min-h-[6lh] text-ink">{{ destination().description }}</p>
 </article>
