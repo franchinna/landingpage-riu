@@ -31,7 +31,6 @@
     "@types/express": "^5.0.1",
     "@types/node": "^22.19.0",
     "postcss": "^8.5.26",
-    "prettier": "^3.8.1",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2"
   }
