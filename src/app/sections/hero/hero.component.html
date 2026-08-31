@@ -1,0 +1,56 @@
+<section class="bg-surface px-5 py-8 md:px-8 md:py-12 lg:py-24">
+  <div class="mx-auto max-w-page">
+    <article
+      class="rounded-lg bg-white p-8 text-[#343a40] shadow-[0_2px_6px_rgba(0,0,0,0.16)] lg:grid lg:grid-cols-2 lg:gap-8"
+    >
+      <!-- El alto de la card lo fija la columna de texto. La imagen va posicionada para no
+           aportar su alto intrínseco y estirarse a lo que sobre. -->
+      <div class="relative aspect-video lg:aspect-auto">
+        <img
+          src="images/playa-cancun.jpg"
+          alt="Playa del Hotel Riu Cancún, con hamacas y sombrillas frente al mar"
+          width="900"
+          height="600"
+          fetchpriority="high"
+          class="absolute inset-0 h-full w-full rounded-lg object-cover"
+        />
+      </div>
+
+      <div class="mt-8 flex flex-col lg:mt-0">
+        <p class="flex items-center gap-2 font-bold">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            class="size-5 shrink-0"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="16" rx="3" />
+            <path d="M3 10h18M8 3v3M16 3v3" />
+            <path
+              d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01M16 17.5h.01"
+              stroke-width="2"
+            />
+          </svg>
+          Ofertas de temporada
+        </p>
+
+        <h1 class="mt-4 text-2xl leading-7 font-bold">
+          Reserva tu próximo verano en el Caribe con hasta un 35% de descuento
+        </h1>
+
+        <p class="mt-4">
+          Todo incluido de verdad: desayuno, almuerzo y cena, bebidas a cualquier hora, deportes
+          acuáticos sin cargo y acceso a las piscinas y al club infantil. Nuestros hoteles frente al
+          mar en Cancún, Punta Cana y Riviera Maya tienen habitaciones con vista al Caribe y salida
+          directa a la playa. La oferta aplica a reservas de cinco noches o más hechas antes del 30
+          de septiembre, y puedes cancelar sin costo hasta cuarenta y ocho horas antes de llegar.
+        </p>
+
+        <button riu-button type="button" class="mt-8 self-end">Ver ofertas</button>
+      </div>
+    </article>
+  </div>
+</section>
