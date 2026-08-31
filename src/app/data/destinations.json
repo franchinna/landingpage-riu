@@ -1,0 +1,50 @@
+[
+  {
+    "id": "atoll",
+    "label": "Temporada 2027",
+    "title": "Riu Atoll, villas sobre el agua en el atolón de Dhaalu",
+    "description": "Un resort repartido en dos islas unidas por una pasarela, con acceso directo a la laguna desde la habitación. Incluye centro de buceo con salidas diarias a los arrecifes, cuatro restaurantes temáticos y traslado en hidroavión desde Malé. Las villas sobre el agua tienen terraza privada con escalera al mar.",
+    "image": "images/piscina-atoll.jpg",
+    "alt": "Piscina del Hotel Riu Atoll rodeada de palmeras frente a la laguna"
+  },
+  {
+    "id": "caribe",
+    "label": "Todo el año",
+    "title": "Riu Caribe, primera línea de playa en la zona hotelera de Cancún",
+    "description": "A quince minutos del aeropuerto y con salida directa a la arena. Todas las habitaciones tienen balcón o terraza y la mayoría mira al Caribe. El hotel comparte instalaciones con los otros dos Riu de la zona, así que el todo incluido vale también en sus restaurantes y bares.",
+    "image": "images/habitacion-caribe.jpg",
+    "alt": "Habitación del Hotel Riu Caribe con cama doble y ventanal al mar"
+  },
+  {
+    "id": "dunamar",
+    "label": "Desde noviembre",
+    "title": "Riu Dunamar, todo incluido frente a Isla Mujeres",
+    "description": "En Costa Mujeres, sobre una de las playas más tranquilas del Caribe mexicano. Tiene siete restaurantes, spa Renova, gimnasio abierto las veinticuatro horas y un club infantil con pileta propia. El agua es poco profunda cerca de la orilla, así que es cómoda para chicos.",
+    "image": "images/restaurante-dunamar.jpg",
+    "alt": "Restaurante del Hotel Riu Dunamar con mesas puestas y vista al jardín"
+  },
+  {
+    "id": "dubai",
+    "label": "Todo el año",
+    "title": "Riu Dubai, en la isla artificial de Deira Islands",
+    "description": "El primer todo incluido de la ciudad, con playa privada de ochocientos metros y traslado gratuito al centro. Combina la propuesta de siempre con excursiones al desierto, y está a media hora del Dubai Mall y del Burj Khalifa. La piscina principal tiene bar dentro del agua.",
+    "image": "images/bar-dubai.jpg",
+    "alt": "Bar del Hotel Riu Dubai con barra iluminada y sillones bajos"
+  },
+  {
+    "id": "funana",
+    "label": "Abre en octubre",
+    "title": "Riu Funana, dunas y océano en la playa de Santa María",
+    "description": "En la isla de Sal, con viento constante todo el año y una de las mejores playas de Cabo Verde. Es el destino elegido para kitesurf y windsurf, con escuela propia en la arena. El hotel tiene cuatro piscinas, una de ellas exclusiva para adultos, y cinco restaurantes.",
+    "image": "images/playa-funana.jpg",
+    "alt": "Playa del Hotel Riu Funana con sombrillas de paja y el océano de fondo"
+  },
+  {
+    "id": "bambu",
+    "label": "Temporada alta",
+    "title": "Riu Bambu, el corazón de Arena Gorda en Punta Cana",
+    "description": "Sobre nueve kilómetros de playa continua, en el complejo con más servicios de Riu en República Dominicana. El todo incluido se comparte con los hoteles vecinos y da acceso al parque acuático Splash Water World. Hay shows todas las noches y deportes acuáticos sin cargo.",
+    "image": "images/piscina-bambu.jpg",
+    "alt": "Piscina del Hotel Riu Bambu con hamacas y palmeras alrededor"
+  }
+]
