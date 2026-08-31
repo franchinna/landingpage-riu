@@ -23,6 +23,8 @@
           id="destination-search"
           type="search"
           placeholder="Buscar destino"
+          [value]="consulta()"
+          (input)="buscar($event)"
           class="h-10 w-full rounded-lg bg-surface pr-3 pl-10 focus-visible:outline-2
                  focus-visible:outline-offset-2 focus-visible:outline-brand"
         />
@@ -33,9 +35,15 @@
       <!-- Las dos últimas solo aparecen en desktop: el diseño muestra cuatro en mobile y
            tablet. Se ocultan por CSS y no recortando el arreglo, para que el HTML que
            renderiza el servidor sea el mismo en todos los anchos. -->
-      @for (destination of destinations; track destination.id; let index = $index) {
+      @for (destination of destinations(); track destination.id; let index = $index) {
         <app-destination-card [destination]="destination" [class.max-lg:hidden]="index >= 4" />
       }
     </div>
+
+    @if (destinations().length === 0) {
+      <p role="status" class="mt-8 text-ink md:mt-12">
+        No encontramos destinos para «{{ consulta() }}».
+      </p>
+    }
   </div>
 </section>
