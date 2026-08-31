@@ -19,7 +19,8 @@
   <meta property="og:image:alt" content="Playa del Hotel Riu Cancún con hamacas y sombrillas frente al mar">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Solo el preconnect a gstatic. El build inlinea la hoja de googleapis, así que a ese
+       host la página nunca lo contacta y el preconnect se desperdicia. -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
