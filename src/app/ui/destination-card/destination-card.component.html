@@ -13,9 +13,11 @@
     {{ destination().label }}
   </p>
 
-  <h3 class="mt-4 line-clamp-2 text-2xl leading-7 font-bold md:text-3xl">
+  <h3 class="mt-4 line-clamp-2 text-2xl leading-8 font-bold md:text-3xl">
     {{ destination().title }}
   </h3>
 
-  <p class="mt-4 line-clamp-6 text-[#343a40]">{{ destination().description }}</p>
+  <!-- 6lh son seis alturas de línea: el bloque ocupa siempre lo mismo aunque el texto no
+       llegue, así las cards de la fila terminan a la misma altura. -->
+  <p class="mt-4 line-clamp-6 min-h-[6lh] text-[#343a40]">{{ destination().description }}</p>
 </article>
