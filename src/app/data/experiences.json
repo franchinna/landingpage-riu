@@ -3,7 +3,7 @@
     "id": "bodas",
     "title": "Bodas",
     "subtitle": "Ceremonias frente al mar.",
-    "image": "images/vertical-bodas.jpg",
+    "image": "images/vertical-bodas",
     "alt": "Ceremonia de boda montada en la playa, con arco de flores frente al mar",
     "brochure": "folletos/bodas.pdf"
   },
@@ -11,7 +11,7 @@
     "id": "lunas-de-miel",
     "title": "Lunas de miel",
     "subtitle": "Suites con jacuzzi privado.",
-    "image": "images/vertical-lunas-de-miel.jpg",
+    "image": "images/vertical-lunas-de-miel",
     "alt": "Pareja brindando en la terraza de una suite con vista al mar",
     "brochure": "folletos/lunas-de-miel.pdf"
   },
@@ -19,7 +19,7 @@
     "id": "party",
     "title": "RIU Party",
     "subtitle": "Música en vivo cada noche.",
-    "image": "images/vertical-party.jpg",
+    "image": "images/vertical-party",
     "alt": "Fiesta nocturna junto a la piscina, con luces de colores y gente bailando",
     "brochure": "folletos/party.pdf"
   },
@@ -27,7 +27,7 @@
     "id": "spa",
     "title": "Spa y bienestar",
     "subtitle": "Circuito de aguas y masajes.",
-    "image": "images/vertical-spa.jpg",
+    "image": "images/vertical-spa",
     "alt": "Sala de masajes del spa, con camillas y luz tenue",
     "brochure": "folletos/spa.pdf"
   }

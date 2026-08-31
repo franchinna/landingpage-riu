@@ -6,8 +6,19 @@
       <!-- El alto de la card lo fija la columna de texto. La imagen va posicionada para no
            aportar su alto intrínseco y estirarse a lo que sobre. -->
       <div class="relative aspect-video lg:aspect-auto">
+        <!-- img con srcset y no picture: picture hace falta cuando cambia el formato o el
+             recorte entre breakpoints, y acá solo cambia el tamaño. Todas las variantes son
+             webp, que es lo mismo para las tres secciones. -->
         <img
-          src="images/playa-cancun.jpg"
+          src="images/playa-cancun-900.webp"
+          srcset="
+            images/playa-cancun-400.webp 400w,
+            images/playa-cancun-600.webp 600w,
+            images/playa-cancun-900.webp 900w
+          "
+          sizes="(min-width: 1024px) calc((min(100vw, 1536px) - 160px) / 2),
+                 (min-width: 768px) calc(100vw - 128px),
+                 calc(100vw - 104px)"
           alt="Playa del Hotel Riu Cancún, con hamacas y sombrillas frente al mar"
           width="900"
           height="600"
