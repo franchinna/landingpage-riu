@@ -1,0 +1,49 @@
+<article class="relative aspect-3/4 overflow-hidden rounded-lg">
+  <img
+    [src]="experience().image"
+    [alt]="experience().alt"
+    width="450"
+    height="600"
+    loading="lazy"
+    class="absolute inset-0 h-full w-full object-cover"
+  />
+
+  <!-- Velo plano sobre toda la foto, como hace riu.com en Encuentra tu experiencia. El
+       degradado solo no alcanza: el título cae en la parte floja de la rampa y sobre fotos
+       claras no llega al contraste mínimo. -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- 174px es la altura de la rampa en el Figma, la misma en los tres breakpoints. Va como
+       min-height para que un título de dos líneas la estire en vez de desbordarla. -->
+  <div
+    class="absolute inset-x-0 bottom-0 flex min-h-[174px] flex-col justify-end bg-linear-to-t
+           from-black to-transparent p-4 text-white"
+  >
+    <h3 class="text-3xl font-bold">{{ experience().title }}</h3>
+    <p class="mt-2">{{ experience().subtitle }}</p>
+
+    <a
+      [href]="experience().brochure"
+      [attr.aria-label]="'Descargar el folleto de ' + experience().title + ' en PDF'"
+      download
+      class="mt-8 flex w-fit items-center gap-2 font-bold underline-offset-4 hover:underline
+             focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+    >
+      Descargar folleto
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="size-5 shrink-0"
+        aria-hidden="true"
+      >
+        <path d="M12 3v11" />
+        <path d="m8 10.5 4 4 4-4" />
+        <path d="M6 17v1a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-1" />
+      </svg>
+    </a>
+  </div>
+</article>
