@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   host: {
     class: `inline-flex cursor-pointer items-center justify-center rounded-lg bg-brand p-2
             text-base font-bold text-white transition-colors duration-300 ease-in-out
-            hover:bg-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2
+            hover:bg-brand-hover active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2
             focus-visible:outline-brand`,
   },
 })

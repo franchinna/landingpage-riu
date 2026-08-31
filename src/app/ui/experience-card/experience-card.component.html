@@ -1,4 +1,4 @@
-<article class="relative aspect-3/4 overflow-hidden rounded-lg">
+<article class="group relative aspect-3/4 overflow-hidden rounded-lg">
   <img
     [src]="src()"
     [srcset]="srcset()"
@@ -9,7 +9,8 @@
     width="450"
     height="600"
     loading="lazy"
-    class="absolute inset-0 h-full w-full object-cover"
+    class="absolute inset-0 h-full w-full object-cover transition-transform duration-500
+           ease-out group-hover:scale-105 group-focus-within:scale-105"
   />
 
   <!-- Velo plano sobre toda la foto, como hace riu.com en Encuentra tu experiencia. El
