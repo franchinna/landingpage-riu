@@ -17,11 +17,12 @@
     {{ destination().label }}
   </p>
 
-  <h3 class="mt-4 line-clamp-2 text-2xl leading-8 font-bold md:text-3xl">
+  <!-- Título y texto ocupan dos y seis alturas de línea fijas, sobre o falte contenido, así
+       todas las cards de la fila terminan a la misma altura. lh se adapta solo al tamaño de
+       cada breakpoint, sin necesidad de variantes. -->
+  <h3 class="mt-4 line-clamp-2 min-h-[2lh] text-2xl leading-8 font-bold md:text-3xl">
     {{ destination().title }}
   </h3>
 
-  <!-- 6lh son seis alturas de línea: el bloque ocupa siempre lo mismo aunque el texto no
-       llegue, así las cards de la fila terminan a la misma altura. -->
   <p class="mt-4 line-clamp-6 min-h-[6lh] text-ink">{{ destination().description }}</p>
 </article>
