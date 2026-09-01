@@ -10,3 +10,32 @@
 # angular 22 lo verifica en las dependencias del proyecto.
 [[plugins]]
   package = "@netlify/angular-runtime"
+
+# Netlify sirve todo con max-age=0 por defecto. El js y el css llevan hash en el
+# nombre, asi que se pueden cachear para siempre: si cambia el contenido, cambia
+# el nombre. El index.html se deja como esta, para que un deploy se vea enseguida.
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Estos no llevan hash, asi que un mes y no para siempre.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/folletos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
