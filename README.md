@@ -54,6 +54,10 @@ src/app/data/        el contenido de las cards, en json
 Figma: de 1809, 768 y 460, solo 768 es un breakpoint real, los otros dos son
 tamaños de lienzo. El layout da las medidas del diseño en los tres anchos.
 
+**Header y footer.** El Figma muestra las tres secciones, no una página
+completa. Se agregaron un header y un footer mínimos para que el documento tenga
+los landmarks `banner` y `contentinfo` y no quede solo con `<main>`.
+
 **Imágenes.** Cada foto se sirve en WebP, en tres anchos las apaisadas y dos
 las verticales, con `srcset` y un `sizes` calculado sobre el ancho real que
 ocupa cada hueco en cada breakpoint.
