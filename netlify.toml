@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist/riu-landing/browser"
+
+# Angular 22 pide node ^22.22.3 y netlify sirve una version mas vieja por defecto.
+[build.environment]
+  NODE_VERSION = "22"

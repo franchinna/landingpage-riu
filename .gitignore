@@ -41,5 +41,4 @@ Thumbs.db
 # Notas y material de diseño, fuera del entregable
 *.md
 !README.md
-.claude/
 design/
