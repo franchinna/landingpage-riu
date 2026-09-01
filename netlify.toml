@@ -5,3 +5,8 @@
 # Angular 22 pide node ^22.22.3 y netlify sirve una version mas vieja por defecto.
 [build.environment]
   NODE_VERSION = "22"
+
+# El runtime tiene que estar en el package.json, no solo instalado desde el panel:
+# angular 22 lo verifica en las dependencias del proyecto.
+[[plugins]]
+  package = "@netlify/angular-runtime"
